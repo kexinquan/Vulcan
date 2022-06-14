@@ -20,11 +20,12 @@ def dnn():
     return DenseNet(
         name='dnn_class',
         in_dim=(15),
+        num_classes=4,
         config={
             'dense_units': [100, 50],
             'dropout': 0.5,
-        },
-        num_classes=4
+        }
+        
     )
 
 if __name__ == '__main__':
