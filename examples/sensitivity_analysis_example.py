@@ -1,9 +1,11 @@
+import torch
+import torch.utils.data
 from torch.utils.data import DataLoader, Subset, TensorDataset
 from vulcanai.models import ConvNet, DenseNet
 import sys
 sys.path.append('.')
 from vulcanai.models.metrics import Metrics
-import torch
+
 
 def dataloader():
     """Create a dataset by importing from the test csv"""

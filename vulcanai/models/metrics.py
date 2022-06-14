@@ -1110,7 +1110,7 @@ class Metrics(object):
         different classes when altering the input to constant feature values
         """
 
-        if network._num_classes is None or network._num_classes == 0:
+        if network.num_classes is None or network.num_classes == 0:
             raise ValueError('There\'s no classification layer')
 
         if features is None:
